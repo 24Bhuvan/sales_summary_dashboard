@@ -1,0 +1,21 @@
+Folder PATH listing
+Volume serial number is ECD2-BB5F
+C:.
+³   README.md
+³   requirements.txt
+³   structure.txt
+³   
+ÃÄÄÄdata
+³       cleaned_sales.csv
+³       raw_sales.csv
+³       
+ÃÄÄÄnotebooks
+³       sales_analysis.ipynb
+³       
+ÃÄÄÄoutputs
+³   ³   kpis.xlsx
+³   ³   
+³   ÀÄÄÄcharts
+ÀÄÄÄreports
+        sales_insights.pdf
+        

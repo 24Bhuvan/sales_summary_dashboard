@@ -1,0 +1,79 @@
+# =====================================================
+# SALES SUMMARY DASHBOARD (1-DAY PROJECT)
+# CLEAR + DETAILED PIPELINE WITH PRO TIPS
+# =====================================================
+
+# --------- PIPELINE (EXECUTE IN THIS ORDER) ----------
+
+step_01_load_data:
+  - import pandas, matplotlib/seaborn
+  - read data/raw_sales.csv
+  - print(df.head())
+  - print(df.info())
+
+step_02_validate_columns:
+  - required_columns = [Date, Product, Category, Quantity, Price]
+  - if TotalAmount exists, Price optional
+  - stop execution if critical columns missing
+
+step_03_clean_data:
+  - convert Date -> datetime
+  - drop rows with null Date / Product
+  - fill or drop null Quantity & Price
+  - remove duplicates
+  - ensure Quantity, Price are numeric
+
+step_04_feature_engineering:
+  - if Revenue not present:
+      Revenue = Quantity * Price
+  - extract Month = Date.to_period('M')
+
+step_05_kpi_calculation:
+  - total_revenue = sum(Revenue)
+  - total_orders = count(rows)
+  - avg_order_value = total_revenue / total_orders
+  - store KPIs in dataframe
+
+step_06_aggregation:
+  - monthly_revenue = group by Month → sum(Revenue)
+  - product_revenue = group by Product → sum(Revenue)
+  - category_revenue = group by Category → sum(Revenue)
+  - sort values descending
+
+step_07_visualization:
+  - line chart → Month vs Revenue
+  - bar chart → Top 5 Products by Revenue
+  - bar or pie chart → Category Revenue Share
+  - add titles, labels, value annotations
+
+step_08_export_outputs:
+  - save charts as PNG → outputs/charts/
+  - export KPI dataframe → outputs/kpis.xlsx
+  - save cleaned data → data/cleaned_sales.csv
+
+step_09_business_insights:
+  - insight_1: revenue trend + action
+  - insight_2: best/worst products + action
+  - insight_3: category focus + action
+  - write in simple business English
+  - export 1-page PDF → reports/sales_insights.pdf
+
+# ---------------- PROFESSIONAL TIPS ------------------
+
+pro_tip_01: client does not care about code, only decisions
+pro_tip_02: every chart must answer ONE business question
+pro_tip_03: keep charts clean (max 3 colors, large fonts)
+pro_tip_04: reuse same pipeline for all clients (scalable income)
+pro_tip_05: fast delivery builds trust more than complex ML
+pro_tip_06: always recommend actions, not observations
+pro_tip_07: present confidently as "Business Data Analyst"
+pro_tip_08: this single project can be sold for ₹2k–₹3k repeatedly
+
+# ---------------- SUCCESS CRITERIA -------------------
+
+success_if:
+  - dashboard answers: what sells, when, where to focus
+  - project finished within 6–8 hours
+  - outputs ready to send to a client
+
+# =====================================================
