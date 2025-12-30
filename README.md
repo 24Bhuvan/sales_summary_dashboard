@@ -1,21 +1,34 @@
-# 📊 Sales Summary Dashboard
+# Sales Summary Dashboard
 
-A beginner-friendly sales data analysis project that converts raw sales data into
-clear KPIs, charts, and a business insights report.
-
----
-
-## 🧠 What This Project Does
-
-- Loads sales data from a CSV file
-- Cleans and prepares the data
-- Calculates key business metrics (KPIs)
-- Creates charts for easy understanding
-- Exports results as Excel, images, and PDF
+An end-to-end sales analytics solution that transforms raw transaction data into
+actionable business insights through automated data cleaning, KPI generation,
+visual analytics, and executive-ready reporting.
 
 ---
 
-## 📁 Project Structure
+## Overview
+
+This project implements a complete analytics pipeline designed for small and
+medium businesses to quickly understand sales performance, seasonality, and
+revenue drivers.
+
+The system ingests raw sales data, processes it reliably, and produces
+decision-ready outputs including charts, KPIs, and a business insights report.
+
+---
+
+## Key Capabilities
+
+- Automated data cleaning and validation
+- Revenue and time-based feature engineering
+- Core KPI computation (Revenue, Orders, AOV)
+- Monthly and category-level aggregation
+- Professional visualizations (line, bar, pie)
+- Exportable outputs (Excel, PNG, PDF)
+
+---
+
+## Project Structure
 
 sales_summary_dashboard/
 │
@@ -36,33 +49,36 @@ sales_summary_dashboard/
 ├── reports/
 │ └── sales_insights.pdf
 │
+├── requirements.txt
+├── pipeline.txt
+├── structure.txt
 └── README.md
 
 
 ---
 
-## 🔄 Project Workflow (High Level)
+## Analytics Workflow
 
-1. Load raw sales data  
-2. Clean and validate data  
-3. Create revenue and month features  
-4. Calculate KPIs  
-5. Aggregate data by month and category  
-6. Create visual charts  
-7. Export charts, KPIs, and PDF report  
-
----
-
-## 📊 Outputs
-
-- 📈 Sales charts (PNG)
-- 📘 KPI report (Excel)
-- 📄 Business insights report (PDF)
-- 🧼 Cleaned sales dataset (CSV)
+1. Data ingestion and validation  
+2. Data cleaning and normalization  
+3. Revenue and time-based feature creation  
+4. KPI calculation  
+5. Aggregation by month and category  
+6. Visualization generation  
+7. Export of reports and business insights  
 
 ---
 
-## 🛠️ Tools Used
+## Deliverables
+
+- **Charts**: Monthly trends and category performance (PNG)
+- **KPIs**: Revenue, orders, and AOV (Excel)
+- **Insights Report**: Executive-ready PDF with recommendations
+- **Clean Dataset**: Reusable cleaned sales data (CSV)
+
+---
+
+## Technology Stack
 
 - Python
 - pandas
@@ -71,14 +87,25 @@ sales_summary_dashboard/
 
 ---
 
-## ✅ Final Outcome
+## Business Value
 
-This project demonstrates a complete **end-to-end data analysis pipeline**
-suitable for beginners and resume use.
+- Identifies revenue trends and seasonality
+- Highlights top and underperforming categories
+- Supports inventory and marketing decisions
+- Provides shareable, executive-ready outputs
 
+---
 
-## 📂 Additional Files
+## Use Cases
 
-- `requirements.txt` – Python dependencies
-- `pipeline.txt` – project workflow steps
-- `structure.txt` – folder structure reference
+- Sales performance reporting
+- Monthly business reviews
+- Category optimization analysis
+- Entry-level analytics solution for SMBs
+
+---
+
+## Status
+
+Production-ready analytical workflow  
+Designed for clarity, reliability, and extensibility
